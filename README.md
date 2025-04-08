@@ -1,3 +1,7 @@
+**Grammar Scoring Engine**
+
+
+
 **Audio-to-Text Conversion**  
 The process starts by transcribing audio files into text using OpenAI's Whisper "base" model, leveraging GPU acceleration when available (via CUDA). Audio files are sourced from predefined training and testing directories (`audios_train` and `audios_test`) stored on Google Drive. Transcription uses FP16 precision if a GPU is detected, otherwise it defaults to FP32 for consistency. Each audio file’s transcription is printed immediately after processing, enabling real-time inspection of the text output for both training and test datasets.
 
